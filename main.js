@@ -1,15 +1,14 @@
+let edad= 18;
+let ingresEdad= parseInt(prompt("Por favor ingrese su edad"));
+let formatoTexto= String;
 
-let edad= prompt("Bienvenido, por favor ingrese su edad");
-
-
-if (edad === "") {
-    alert("Necesitas colocar tu edad");
-} else if (edad < "18") {
-    alert("No cumples con la edad");
-} else {
-    alert(" gracias por elegirnos");
+if (ingresEdad >= edad) {
+    alert("Bienvenido a nuestro sitio");    
 }
-
+else if (ingresEdad < edad) {
+    alert("No cumples con la mayoría de edad");
+    
+}
 
 //total compra carrito
 const carrito= [
@@ -42,11 +41,5 @@ function segundo(){
 
 primero(segundo);
 
-let puntuacion= 0;
-
-while (puntuacion <= 10){
-    alert ("Califique del 1 al 10 que le pareció nuestro sitio " + puntuacion);
-    puntuacion ++;
-}
     
 
